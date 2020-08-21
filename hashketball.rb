@@ -160,7 +160,9 @@ def team_colors(team)
 end
 
 def team_names 
-  
+  game_hash.each do |home_away, team_data|
+    return team_data[0]
+  end
 end
 
 def player_numbers
