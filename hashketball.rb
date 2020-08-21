@@ -163,9 +163,9 @@ def team_names
   game_hash.each do |home_away, team_data|
     team_data.each do |key, value|
     return key[0]
-    binding.pry
   end
 end
+binding.pry
 end
 
 def player_numbers
