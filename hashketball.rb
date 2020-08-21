@@ -188,7 +188,7 @@ def player_stats(name_of_player)
         if player[:player_name] == name_of_player
       end
     end
-    return team_data[players][name_of_player]
+    return team_data[:players][name_of_player]
   end
 end
 
