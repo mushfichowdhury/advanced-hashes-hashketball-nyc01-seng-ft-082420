@@ -200,7 +200,7 @@ def big_shoe_rebounds
       if key[:shoe] > big_foot
         big_foot = key[:shoe]
       end
+      return key[:rebounds]
   end
 end
-return key[:rebounds]
 end
