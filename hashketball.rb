@@ -201,6 +201,9 @@ def big_shoe_rebounds
       if key[:shoe] > big_foot
         big_foot = key[:shoe]
         rebound = key[:rebounds]
+      game_hash.each do |home_away, team_data|
+        puts "Made it!"
+    end
       end
       #binding.pry
   end
