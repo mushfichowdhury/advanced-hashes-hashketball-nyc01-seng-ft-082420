@@ -193,7 +193,7 @@ def player_stats(name_of_player)
 end
 
 def big_shoe_rebounds 
-  big_foot = nil
+  big_foot = 0
   game_hash.each do |home_away, team_data|
     team_data[:players].each do |key|
       #binding.pry 
