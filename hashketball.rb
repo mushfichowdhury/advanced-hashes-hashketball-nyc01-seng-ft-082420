@@ -196,7 +196,7 @@ def big_foot_helper
 big_foot = []
 game_hash.each do |home_away, team_data|
   team_data[:players].each do |key, value|
-    big_foot.push(value[:shoe])
+    big_foot << value[:shoe]
     biggest_shoesize = big_foot.sort[-1]
   end
 end
