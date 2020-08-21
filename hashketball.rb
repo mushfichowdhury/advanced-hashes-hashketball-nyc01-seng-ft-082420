@@ -195,4 +195,6 @@ end
 def big_shoe_rebounds 
   game_hash.each do |home_away, team_data|
     team_data[:players].each do |key|
+  end
+end
 end
