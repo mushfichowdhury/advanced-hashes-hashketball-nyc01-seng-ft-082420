@@ -201,7 +201,7 @@ def big_shoe_rebounds
         big_foot = key[:shoe]
       end
       #binding.pry
-      key[:rebounds]
+      return key[:rebounds]
   end
 
 end
