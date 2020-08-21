@@ -196,7 +196,7 @@ def big_shoe_rebounds
   big_foot = 0
   rebound = 0
   game_hash.each do |home_away, team_data|
-    team_data[:players].each do |key |
+    team_data[:players].each do |key|
       #binding.pry 
       if key[:shoe] > big_foot
         big_foot = key[:shoe]
