@@ -174,15 +174,11 @@ def player_numbers(team_name)
       team_data.each do |key, value|
         binding.pry
         if key == :players
-          value.each do |numbers|
-            if numbers == :number
-              jersey << numbers
-            end
-          end
+          jersey << key[:number]
         end
-    jersey
-    end
+      end
   end
+  jersey
 end
     
 
