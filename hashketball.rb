@@ -175,7 +175,6 @@ def player_numbers(team_name)
        binding.pry
         jersey << key[:number]
         end
-      end
   end
   jersey
 end
