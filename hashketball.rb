@@ -177,11 +177,11 @@ def player_numbers(team_name)
           value.each do |numbers|
             if numbers == :number
               jersey << numbers
+            end
           end
-      end
-    end
+        end
     jersey
-    
+    end
   end
 end
     
