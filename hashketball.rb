@@ -161,7 +161,7 @@ end
 
 def team_names 
   game_hash.each do |home_away, team_data|
-    return home_away[team_data][0]
+    return game_hash[home_away][team_data][0]
   end
 end
 
