@@ -200,7 +200,7 @@ def big_shoe_rebounds
       binding.pry 
       if key[:shoe] > big_foot
         big_foot = key[:shoe]
-        rebound = key[:rebound]
+        rebound = key[:rebounds]
       end
       #binding.pry
       return rebound
