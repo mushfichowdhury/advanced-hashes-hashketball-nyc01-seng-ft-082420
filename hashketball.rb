@@ -165,8 +165,6 @@ def team_names
     return home_away[0]
   end
 end
-binding.pry
-end
 
 def player_numbers
 end
