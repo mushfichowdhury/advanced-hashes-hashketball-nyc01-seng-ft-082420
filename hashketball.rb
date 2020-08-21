@@ -202,7 +202,6 @@ def big_shoe_rebounds
   end
   max_player[:stats][:rebounds]
 end
-end
 
 
 
