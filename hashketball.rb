@@ -197,8 +197,7 @@ def big_shoe_rebounds
   game_hash.each do |home_away, team_data|
     team_data[:players].each do |key, value|
       binding.pry
-      max_player = value 
-      if value[:shoe_size] > max_player[:shoe_size]
+      if key[:shoe_size] > max_player[:shoe_size]
     end
   end
   max_player[:stats][:rebounds]
