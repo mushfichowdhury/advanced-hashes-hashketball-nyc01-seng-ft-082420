@@ -202,6 +202,6 @@ def big_shoe_rebounds
       end
       #binding.pry
   end
-  big_foot[:rebounds]
+  team_data[key][:rebounds]
 end
 end
