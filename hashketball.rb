@@ -165,7 +165,7 @@ def team_names
   #binding.pry
   teams << team_data[:team_name]
   end
-  return teams
+  teams
 end
 
 def player_numbers
