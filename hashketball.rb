@@ -202,7 +202,8 @@ game_hash.each do |home_away, team_data|
 end
 end
     
-def big_shoe_rebounds    
+def big_shoe_rebounds 
+  big_foot_helper
 game_hash.each do |home_away, team_data|
   team_data[:players].each do |key, value|
     value.each do |inner_key, inner_value|
