@@ -185,11 +185,10 @@ end
 def player_stats(name_of_player)
  game_hash.each do |home_away, team_data|
     team_data[:players].each do |player|
-        if player[0] == name_of_player
-          
+        if player[:player_name] == name_of_player
       end
     end
-    return team_data[:players][name_of_player]
+    return team_data[players][name_of_player]
   end
 end
 
