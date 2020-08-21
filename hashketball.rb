@@ -192,13 +192,17 @@ def player_stats(name_of_player)
   end
 end
 
-def big_shoe_rebounds
+def big_foot_helper
 big_foot = []
 game_hash.each do |home_away, team_data|
   team_data[:players].each do |key, value|
     big_foot.push(value[:shoe])
     biggest_shoesize = big_foot.sort[-1]
+  end
+end
+end
     
+def big_shoe_rebounds    
 game_hash.each do |home_away, team_data|
   team_data[:players].each do |key, value|
     value.each do |inner_key, inner_value|
@@ -209,9 +213,6 @@ game_hash.each do |home_away, team_data|
       end
     end
   end
-end
-end
-end
 end
 player_rebounds
 end
