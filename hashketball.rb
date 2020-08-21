@@ -163,9 +163,9 @@ def team_names
   teams = []
   game_hash.each do |home_away, team_data|
   #binding.pry
-  teams << team_data[:team_names]
-  return teams 
+  teams << team_data[:team_name]
   end
+  return teams
 end
 
 def player_numbers
