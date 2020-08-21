@@ -166,6 +166,7 @@ def team_names
     return key[0]
   end
 end
+end
 
 def player_numbers
 end
