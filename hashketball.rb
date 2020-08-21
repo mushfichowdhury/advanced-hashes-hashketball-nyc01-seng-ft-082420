@@ -164,8 +164,9 @@ def team_names
     team_data.each do |key, value|
     return key[0]
   end
-  binding.pry
+  
 end
+binding.pry
 end
 
 def player_numbers
