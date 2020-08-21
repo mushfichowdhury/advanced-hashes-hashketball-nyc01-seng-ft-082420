@@ -162,7 +162,7 @@ end
 def team_names 
   game_hash.each do |home_away, team_data|
     binding.pry
-    return home_away[0]
+    return home_away[team_data][0]
   end
 end
 
