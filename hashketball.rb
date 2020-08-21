@@ -172,7 +172,7 @@ def player_numbers(team_name)
   jersey = []
   game_hash.each do |home_away, team_data|
       team_data.each do |key, value|
-       binding.pry
+       #binding.pry
         if key == :players
           jersey << key[:number]
         end
@@ -196,6 +196,7 @@ def big_shoe_rebounds
   max_player = nil
   game_hash.each do |home_away, team_data|
     team_data[:players].each do |key, value|
+      binding.pry
       max_player = value 
       if value[:shoe_size] > max_player[:shoe_size]
     end
