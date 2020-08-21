@@ -168,7 +168,9 @@ def team_names
   teams
 end
 
-def player_numbers
+def player_numbers(team_name)
+  game_hash.each do |home_away, team_data|
+    team_data[]
 end
 
 def player_stats(name_of_player)
