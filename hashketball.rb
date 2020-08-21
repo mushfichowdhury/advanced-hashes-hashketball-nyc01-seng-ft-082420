@@ -183,16 +183,6 @@ def player_numbers(team_name)
   end
 end
     
-    
-    
-    team_data[:players].each do |key, value|
-      key[:number].each do |inner_key, inner_value|
-        jersey << inner_key[inner_value]
-      end
-    end
-  end
-  jersey
-end
 
 def player_stats(name_of_player)
  game_hash.each do |home_away, team_data|
