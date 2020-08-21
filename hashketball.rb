@@ -180,7 +180,6 @@ def player_numbers(team_name)
   end
   jersey
 end
-    
 
 def player_stats(name_of_player)
  game_hash.each do |home_away, team_data|
