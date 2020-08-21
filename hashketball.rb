@@ -194,8 +194,24 @@ end
 
 def big_shoe_rebounds
 big_foot = []
-game_hash.collect do |home_away, team_data|
-  team_data[:players].
+game_hash.each do |home_away, team_data|
+  team_data[:players].each do |key, value|
+    big_foot.push(value[:shoe])
+    biggest_shoesize = big_foot.sort[-1]
+    
+game_hash.each do |home_away, team_data|
+  team_data[:players].each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_key == :shoe 
+        if value == biggest_shoesize
+          player_rebounds = team_data[:rebounds]
+        end
+      end
+    end
+  end
+end
+player_rebounds
+end
 
 
 
